@@ -17,7 +17,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/selectize/selectize.js.git"
+    "url": "git://github.com/Web-Technology-Group/selectize.js.git"
   },
   "dependencies": {
     "jquery": "^1.7.0",
