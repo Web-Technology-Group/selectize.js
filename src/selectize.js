@@ -630,6 +630,11 @@ $.extend(Selectize.prototype, {
 		if (!self.isFocused) return;
 		self.isFocused = false;
 
+        // IE11 bug: selectize dropdown closes when clicking on the arrows or scrollbar
+        if (e && e.target === self.$control_input[0]) {
+            return;
+        }
+
 		if (self.ignoreFocus) {
 			return;
 		} else if (!self.ignoreBlur && document.activeElement === self.$dropdown_content[0]) {
